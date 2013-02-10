@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		632147FD16C6A05100BA90C0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 632147FC16C6A05100BA90C0 /* main.c */; };
+		6321481C16C6B1E300BA90C0 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6321481A16C6B1E300BA90C0 /* SDLMain.m */; };
+		6321482216C6B41200BA90C0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6321482116C6B41200BA90C0 /* Cocoa.framework */; };
+		6321482616C6B5B300BA90C0 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6321482516C6B5B300BA90C0 /* SDL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +26,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		632147F816C6A05100BA90C0 /* Platformer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Platformer; sourceTree = BUILT_PRODUCTS_DIR; };
 		632147FC16C6A05100BA90C0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		632147FE16C6A05100BA90C0 /* Platformer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Platformer.1; sourceTree = "<group>"; };
+		6321481A16C6B1E300BA90C0 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		6321481B16C6B1E300BA90C0 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		6321482116C6B41200BA90C0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6321482516C6B5B300BA90C0 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
+		6321482716C6B73200BA90C0 /* Platformer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Platformer; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6321482616C6B5B300BA90C0 /* SDL.framework in Frameworks */,
+				6321482216C6B41200BA90C0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 		632147ED16C6A05000BA90C0 = {
 			isa = PBXGroup;
 			children = (
+				6321482516C6B5B300BA90C0 /* SDL.framework */,
+				6321482116C6B41200BA90C0 /* Cocoa.framework */,
 				632147FB16C6A05100BA90C0 /* Platformer */,
 				632147F916C6A05100BA90C0 /* Products */,
 			);
@@ -50,7 +61,7 @@
 		632147F916C6A05100BA90C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				632147F816C6A05100BA90C0 /* Platformer */,
+				6321482716C6B73200BA90C0 /* Platformer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				632147FC16C6A05100BA90C0 /* main.c */,
+				6321481A16C6B1E300BA90C0 /* SDLMain.m */,
+				6321481B16C6B1E300BA90C0 /* SDLMain.h */,
 				632147FE16C6A05100BA90C0 /* Platformer.1 */,
 			);
 			path = Platformer;
@@ -81,7 +94,7 @@
 			);
 			name = Platformer;
 			productName = Platformer;
-			productReference = 632147F816C6A05100BA90C0 /* Platformer */;
+			productReference = 6321482716C6B73200BA90C0 /* Platformer */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -112,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632147FD16C6A05100BA90C0 /* main.c in Sources */,
+				6321481C16C6B1E300BA90C0 /* SDLMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +170,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = 4.2;
@@ -170,6 +185,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -186,7 +202,7 @@
 				6321480016C6A05100BA90C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6321480116C6A05100BA90C0 /* Build configuration list for PBXNativeTarget "Platformer" */ = {
 			isa = XCConfigurationList;
@@ -195,6 +211,7 @@
 				6321480316C6A05100BA90C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
