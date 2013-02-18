@@ -11,6 +11,7 @@
 		6321481C16C6B1E300BA90C0 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6321481A16C6B1E300BA90C0 /* SDLMain.m */; };
 		6321482216C6B41200BA90C0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6321482116C6B41200BA90C0 /* Cocoa.framework */; };
 		6321482616C6B5B300BA90C0 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6321482516C6B5B300BA90C0 /* SDL.framework */; };
+		63604DB516CD32770075A8E9 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63604DB416CD32770075A8E9 /* SDL_image.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		6321482116C6B41200BA90C0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6321482516C6B5B300BA90C0 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
 		6321482716C6B73200BA90C0 /* Platformer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Platformer; sourceTree = BUILT_PRODUCTS_DIR; };
+		63604DB416CD32770075A8E9 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = Library/Frameworks/SDL_image.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63604DB516CD32770075A8E9 /* SDL_image.framework in Frameworks */,
 				6321482616C6B5B300BA90C0 /* SDL.framework in Frameworks */,
 				6321482216C6B41200BA90C0 /* Cocoa.framework in Frameworks */,
 			);
@@ -51,6 +54,7 @@
 		632147ED16C6A05000BA90C0 = {
 			isa = PBXGroup;
 			children = (
+				63604DB416CD32770075A8E9 /* SDL_image.framework */,
 				6321482516C6B5B300BA90C0 /* SDL.framework */,
 				6321482116C6B41200BA90C0 /* Cocoa.framework */,
 				632147FB16C6A05100BA90C0 /* Platformer */,
